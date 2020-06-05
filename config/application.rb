@@ -6,9 +6,8 @@ require 'rails/all'
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
-module Incubit
-  class Application < Rails::Application
-    # Initialize configuration defaults for originally generated Rails version.
+module Mockoutube
+  class Application < Rails::Application # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 6.0
 
     # Settings in config/environments/* take precedence over those specified here.
