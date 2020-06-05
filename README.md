@@ -1,24 +1,39 @@
-# README
+# Mockoutube
+A basic Rails application
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### Getting started
 
-Things you may want to cover:
+Clone the repository to your local machine:
+```
+$ git clone https://github.com/therealedsheenan/mockoutube.git
+```
 
-* Ruby version
+Install the necessary dependencies
+```
+$ cd mockoutube # If you're note in the current project directory yet
+$ bundle install
+$ yarn install
+```
 
-* System dependencies
+Setup database
+```
+$ bundle exec rails db:setup
+```
 
-* Configuration
+Run the server
+```
+$ bundle exec rails s
+```
 
-* Database creation
+### Tests
+To run test, run the following command:
+```
+$ bundle exec rails test
+```
 
-* Database initialization
+#### Highlighted test scripts
+The following directories are the main test scripts:
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- `test/controllers/**`
+- `test/controllers/models/**`
+- `test/controllers/system/**`
