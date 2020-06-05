@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root 'home#index'
+  root 'sessions#new'
 
   resources :users, only: %i[show new edit create update]
   resources :sessions, only: %i[new create destroy]
