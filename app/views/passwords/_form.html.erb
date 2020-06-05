@@ -1,4 +1,4 @@
-<div class="bg-white rounded-t-lg overflow-hidden border-t border-l border-r border-gray-400 p-4 px-3 py-10 bg-gray-200 flex justify-center">
+<div class="bg-white rounded-t-lg overflow-hidden border-l border-r border-gray-400 p-4 px-3 py-10 bg-gray-200 flex justify-center">
   <div class="w-full max-w-xs">
     <%= form_tag password_reset_path, { :class => "bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4" } do |form| %>
       <%= hidden_field_tag :token, params[:token] %>
